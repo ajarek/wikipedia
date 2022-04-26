@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Wikipedia</title>
+    <style>
+        .list-group-item {
+            transition: all 1s;
+        }
+
+        .list-group-item:hover {
+            background-color: #000;
+            color: beige;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary" style="box-sizing: border-box;">
+    <div class="container px-4 mt-5">
+        <div class="row text-center d-flex flex-column justify-content-evenly  ">
+            <div class="col  "><img src="wiki-logo.png" class="img-fluid" width="20%" alt=""></div>
+            <div class="col py-5">
+                <h2>Search Wikipedia</h2>
+            </div>
+            <div class="col mb-5 ">
+                <form class="d-flex">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btn" class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+        <div id="row" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 "></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
